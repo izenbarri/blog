@@ -1,23 +1,28 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+  {%- include head.html -%}
 
-  {{ content }}
+  <body>
+    <main class="home">
+      <div class="post-header">
+        <h1 class="post-title">Nicolas Izenbarri</h1>
+      </div>
 
-  {%- if site.posts.size > 0 -%}
-    {%- for post in site.posts -%}
-      <h3>
-        <a class="post-link" href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-        </a>
-      </h3>
-      {{ post.excerpt }}
-    {%- endfor -%}
-  {%- endif -%}
+      {{ content }}
 
-</div>
+      {%- if site.posts.size > 0 -%}
+        {%- for post in site.posts -%}
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {{ post.excerpt }}
+        {%- endfor -%}
+      {%- endif -%}
+
+    </div>
+  </body>
+
+</html>
