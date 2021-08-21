@@ -110,6 +110,7 @@ p.lead {
 hr {
   background: none;
   border: 0;
+  height: 30px;
   margin-top: 0;
   padding: 0;
 }
