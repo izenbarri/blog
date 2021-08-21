@@ -10,9 +10,9 @@ However, instead of going back home at the expected date, he kept postponing the
 
 (that was before Beethoven… symphonies back then were relatively cheap and not someone’s life and blood)
 
-In the last movement, in the adagio finale, the musicians leave the stage, one-by-one, until only two violins are left (one of them played by Hadyn himself).
+In the last movement, in the adagio finale, the musicians leave the stage, one-by-one, until only two violins are left (one of them played by Hadyn himself). The story tells us that the prince got the message and started preparing the return trip on the very next day.
 
-The story tells us that the prince got the message and started preparing the return trip the next day.
+---
 
 The video below is the Symphony’s fourth movement, performed at the Vienna Philharmonic’s New Year’s Eve concerto. If you’re in a hurry, it gets funny after 4″15.
 
