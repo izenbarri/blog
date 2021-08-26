@@ -35,14 +35,15 @@ body {
   text-decoration: none;
 }
 
-main {
-  margin: auto;
+main.container {
+  margin: 70px auto;
   max-width: 720px;
   padding: 0 15px;
 }
 
-main {
-  margin: 70px auto;
+main.home {
+  margin: 70px 30px;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -149,4 +150,38 @@ div.youtube iframe {
   margin: auto;
   width: calc(100% - 30px);
   max-width: 720px;
+}
+
+.display {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+}
+
+.topic-list {
+  font-size: 20px;
+}
+
+.post-list {
+  font-size: 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-list > .post-list-item {
+  margin: 0 70px 60px 0;
+  width: 250px;
+}
+
+.post-list > .post-list-item > .display {
+  border-bottom: 1px dotted #888;
+  color: #c00;
+}
+
+.post-list > .post-list-item > a {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  margin-top: 0;
+  color: #000;
+  text-decoration: none;
 }

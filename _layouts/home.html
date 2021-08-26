@@ -9,18 +9,24 @@
         <h1 class="post-title">Nicolas Izenbarri</h1>
       </div>
 
-      {{ content }}
+      <h2>Topics</h2>
+      <div class="topic-list">
+        <span class="display">Música Clássica / Classical Music</span>
+        <a href="/musicaljoke">A Musical Joke</a>
+      </div>
 
-      {%- if site.posts.size > 0 -%}
+      <h2>Recent Posts</h2>
+      <div class="post-list">
         {%- for post in site.posts -%}
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">
+          <div class="post-list-item">
+            <div class="display">{{ post.categories[0] }}</div>
+            <a href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
             </a>
-          </h3>
-          {{ post.excerpt }}
+            {{ post.date | date_to_long_string }}
+          </div>
         {%- endfor -%}
-      {%- endif -%}
+      </div>
 
     </div>
   </body>
