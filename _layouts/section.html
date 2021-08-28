@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<main class="container">
+  <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+      {{ content }}
+
+      {%- for post in site.posts -%}
+        <div class="post-list-item">
+          {%- if post.section == page.section_id -%}
+            <hr />
+            <a href="{{ post.url | relative_url }}">
+              <h2 class="post-title mt-0">{{ post.title | escape }}</h2>
+            </a>
+            <p>
+              {{ post.excerpt | remove: '<img>' | remove: '<p>' | remove: '</p>' }}
+              <a href="{{ post.url | relative_url }}"><em>Read more...</em></a>
+            </p>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+
+      <div class="fleuron"></div>
+    </div>
+
+  </article>
+</main>

@@ -9,17 +9,28 @@
         <h1 class="post-title">Nicolas Izenbarri</h1>
       </div>
 
-      <h2>Topics</h2>
+      <h2 class="mt-0">Tópicos / Topics</h2>
       <div class="topic-list">
-        <span class="display">Música Clássica / Classical Music</span>
-        <a href="/musicaljoke">A Musical Joke</a>
+        {%- for area in site.data.areas -%}
+          <div class="topic-list-area">
+            <span class="display">{{ area.label }}</span>
+            {%- for section in site.data.sections -%}
+              {%- if section[1].area == area.id -%}
+                <span class="separator">&middot;</span>
+                <a href="/{{ section[0] }}">{{ section[1].label }}</a>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        {%- endfor -%}
       </div>
 
-      <h2>Recent Posts</h2>
+      <hr/>
+
+      <h2 class="mt-0">Recent Posts</h2>
       <div class="post-list">
         {%- for post in site.posts -%}
           <div class="post-list-item">
-            <div class="display">{{ post.categories[0] }}</div>
+            <div class="display">{{ site.data.sections[post.section].label }}</div>
             <a href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
             </a>
@@ -27,6 +38,10 @@
           </div>
         {%- endfor -%}
       </div>
+
+      <div class="fleuron"></div>
+
+      {%- include footer.html -%}
 
     </div>
   </body>

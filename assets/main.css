@@ -8,6 +8,22 @@ body {
   font-family: 'Crimson Pro', serif;
 }
 
+.mt-0 {
+  margin-top: 0;
+}
+
+.mr-0 {
+  margin-top: 0;
+}
+
+.mb-0 {
+  margin-top: 0;
+}
+
+.ml-0 {
+  margin-top: 0;
+}
+
 .site-header {
   background: #333;
   box-shadow: 0 4px 5px #FF6363;
@@ -61,7 +77,7 @@ h1 {
   font-size: 35px;
 }
 
-h1.post-title {
+.post-title {
   margin-bottom: 0;
   text-align: center;
 }
@@ -153,12 +169,34 @@ div.youtube iframe {
 }
 
 .display {
+  color: #c00;
   font-family: 'Bebas Neue', sans-serif;
   font-size: 18px;
 }
 
-.topic-list {
+.topic-list-area {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.topic-list-area > .display {
+  line-height: 30px;
+}
+
+.topic-list-area > .separator {
   font-size: 20px;
+  margin-left: 10px;
+}
+
+.topic-list-area > a {
+  font-size: 20px;
+  line-height: 26px;
+  margin-left: 10px;
+}
+
+.topic-list h2 {
+  margin-top: 0;
 }
 
 .post-list {
@@ -174,7 +212,6 @@ div.youtube iframe {
 
 .post-list > .post-list-item > .display {
   border-bottom: 1px dotted #888;
-  color: #c00;
 }
 
 .post-list > .post-list-item > a {
