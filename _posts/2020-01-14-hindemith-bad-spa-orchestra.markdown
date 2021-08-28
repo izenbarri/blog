@@ -1,10 +1,10 @@
 ---
 title: Overture to the Flying Dutchman as Sight-read by a Bad Spa Orchestra at 7 in the Morning by the Well
 layout: post
-categories: musicaljoke
+section: musicaljoke
 ---
 
-The Overture to the _Flying Dutchman_ as Sight-read by a Bad Spa Orchestra at 7 in the Morning by the Well (_Ouvertüre zum „Fliegenden Holländer“, wie sie eine schlechte Kurkapelle morgens um 7 am Brunnen vom Blatt spielt_) is a piece by Paul Hindemith from 1925 and is _pretty much [what is says on the tin](https://tvtropes.org/pmwiki/pmwiki.php/Main/ExactlyWhatItSaysOnTheTin)._
+The Overture to the _Flying Dutchman_ as Sight-read by a Bad Spa Orchestra at 7 in the Morning by the Well (_Ouvertüre zum „Fliegenden Holländer“, wie sie eine schlechte Kurkapelle morgens um 7 am Brunnen vom Blatt spielt_) is a piece by Paul Hindemith from 1925 and is pretty much... that.
 
 It’s a parody rendition of the _Flying Dutchman Overture_ by Wagner, as it would be played by a very bad and presumably very tired string quartet. You can also guess that the imagined spa attendees pretty much ignore what’s going on, treating Wagner as some kind of annoying muzak (which given Wagner’s pretentious ways, is a though very amusing on itself).
 
