@@ -5,8 +5,8 @@
 
   <body>
     <main class="home">
-      <div class="post-header">
-        <h1 class="post-title">Nicolas Izenbarri</h1>
+      <div class="section-header">
+        <h1 class="section-title">Nicolas Izenbarri</h1>
       </div>
 
       <h2 class="mt-0">Tópicos / Topics</h2>
@@ -17,7 +17,7 @@
             {%- for section in site.data.sections -%}
               {%- if section[1].area == area.id -%}
                 <span class="separator">&middot;</span>
-                <a href="/{{ section[0] }}">{{ section[1].label }}</a>
+                <a href="/topic/{{ section[0] }}">{{ section[1].label }}</a>
               {%- endif -%}
             {%- endfor -%}
           </div>
@@ -30,7 +30,9 @@
       <div class="post-list">
         {%- for post in site.posts -%}
           <div class="post-list-item">
-            <div class="display">{{ site.data.sections[post.section].label }}</div>
+            <div class="display">
+              <a href="/topic/{{ post.section }}">{{ site.data.sections[post.section].label }}</a>
+            </div>
             <a href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
             </a>

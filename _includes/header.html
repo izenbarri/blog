@@ -1,6 +1,9 @@
 <header class="site-header" role="banner">
   <div class="inner">
-    <a href="/" class="site-name">Nicolas Izenbarri</a>
+    <span class="site-name">
+      <a href="/" class="">Nicolas Izenbarri</a> &middot;
+      <a href="/topic/{{ page.section }}">{{ site.data.sections[page.section].label }}</a>
+    </span>
     <a href="/" class="close">&times;</a>
   </div>
 </header>

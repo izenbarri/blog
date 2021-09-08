@@ -1,6 +1,7 @@
 ---
 title: A Musical Joke
 layout: section
+section: musicaljoke
 section_id: musicaljoke
 ---
 
