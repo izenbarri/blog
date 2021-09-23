@@ -1,6 +1,21 @@
+# Topics.
+autism:
+  label: "Autismo"
+  type: topic
+aro:
+  label: "Aro"
+  type: topic
+history:
+  label: "História"
+  type: topic
+classical:
+  label: "Música Clássica / Classical Music"
+  type: topic
 musicaljoke:
   label: "A Musical Joke"
-  area: classical
-mahler:
-  label: "Mahler"
-  area: classical
+  type: topic
+
+# Reading Lists.
+fascism:
+  label: "Fascismo"
+  type: readinglist

@@ -200,29 +200,25 @@ div.youtube iframe {
   text-decoration: underline;
 }
 
-.topic-list-area {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-}
-
-.topic-list-area > .display {
+.topic-list {
   line-height: 30px;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
-.topic-list-area > .separator {
+.topic-list > .separator {
   font-size: 20px;
   margin-left: 10px;
+  margin-right: 10px;
 }
 
-.topic-list-area > a {
+.topic-list > a {
   font-size: 20px;
   line-height: 26px;
-  margin-left: 10px;
 }
 
-.topic-list h2 {
-  margin-top: 0;
+.topic-list .display {
+  white-space: pre;
 }
 
 .post-list {

@@ -9,22 +9,33 @@
         <h1 class="section-title">Nicolas Izenbarri</h1>
       </div>
 
-      <h2 class="mt-0">Tópicos / Topics</h2>
       <div class="topic-list">
-        {%- for area in site.data.areas -%}
-          <div class="topic-list-area">
-            <span class="display">{{ area.label }}</span>
-            {%- for section in site.data.sections -%}
-              {%- if section[1].area == area.id -%}
-                <span class="separator">&middot;</span>
-                <a href="/topic/{{ section[0] }}">{{ section[1].label }}</a>
-              {%- endif -%}
-            {%- endfor -%}
-          </div>
+        <span class="display">Blog</span>
+        <span class="separator">&middot;</span>
+        <a href="/post/en">Microblogging</a>
+        <span class="separator">&middot;</span>
+        <a href="/post/en">Português</a>
+        <span class="separator">&middot;</span>
+        <a href="/post/en">English</a>
+        <span class="separator">&middot;</span>
+
+        <span class="display">Tópicos / Topics</span>
+        {%- for section in site.data.sections -%}
+          {% if section[1].type == 'topic' %}
+            <span class="separator">&middot;</span>
+            <a href="/topic/{{ section[0] }}">{{ section[1].label }}</a>
+          {% endif %}
+        {%- endfor -%}
+        <span class="separator">&middot;</span>
+
+        <span class="display">Reading Lists</span>
+        {%- for section in site.data.sections -%}
+          {% if section[1].type == 'readinglist' %}
+            <span class="separator">&middot;</span>
+            <a href="/topic/{{ section[0] }}">{{ section[1].label }}</a>
+          {% endif %}
         {%- endfor -%}
       </div>
-
-      <hr/>
 
       <h2 class="mt-0">Recent Posts</h2>
       <div class="post-list">

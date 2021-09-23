@@ -12,7 +12,7 @@ permalink: /post/:title/
 port: 12345
 
 collections:
-  topic:
+  readingnotes:
     output: true
 
 # Exclude from processing.
