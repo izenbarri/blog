@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<main class="container">
+  <article class="section h-entry">
+
+    <header class="section-header">
+      <h1 class="section-title" itemprop="name headline">{{ page.title | escape }}</h1>
+    </header>
+
+    <div class="post-content" itemprop="articleBody">
+      {{ content }}
+
+      {%- for post in site.posts -%}
+        <div class="post-list-item">
+          {%- if post.section == page.section_id -%}
+            {% if loop.index0 %}
+              <hr />
+            {% endif %}
+            <h2 class="post-title mt-0">
+              <a href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h2>
+            {{ post.content }}
+            <p>
+              <a href="{{ post.url | relative_url }}">[<em>Permalink</em>]</a>
+            </p>
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+
+      <div class="fleuron"></div>
+    </div>
+
+  </article>
+</main>
